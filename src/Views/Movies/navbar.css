@@ -1,0 +1,145 @@
+.fixed-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; 
+    z-index: 11;
+}
+
+.black-bar {
+    background-color: #222;
+}
+
+
+.title-flix {
+    margin: 0%;
+    margin-left: 2%;
+    width: 160px;
+    font-weight: bold;
+    font-size: 2.3em;
+    color: rgb(250, 41, 41);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title-flix:hover {
+    color: rgb(250, 41, 41);
+}
+
+.mylist {
+    color: white;
+    position: inherit;
+    left: 13%;
+    top: 2.2%;
+    font-size: .9rem;
+    padding-top: 8px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+
+.mylist:hover {
+    background-color: rgb(77, 68, 68);
+
+    font-weight: bold;
+}
+
+.search-container {
+    width: 400px;
+    height: 60px;
+   /*  position: absolute;
+    right: 2%;
+    top: 2%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+
+}
+
+input {
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: none;
+}
+
+.search-btn {
+    padding: 12px;
+    margin-right: 16px;
+    height: 50px;
+    font-size: 17px;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 850px) {
+    .mylist {
+        position: inherit;
+        left: 27%;
+        top: 3.2%;
+        width: 12%;
+        height: 33px;
+        left: 27%;
+        top: 3.2%;
+    }
+    h5 {
+        font-size: .7rem;
+    }
+    .search-container {
+        width: 40%;
+        display: flex;
+    }
+    input {
+        font-size: 10px;
+    }
+    .search-btn {
+        padding: 10px;
+        height: 40px;
+    }
+   
+}
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+    .mylist {
+        left: 27%;
+        top: 3.2%;
+        width: 12%;
+        height: 33px;
+        left: 27%;
+        top: 3.2%;
+    }
+    h5 {
+        font-size: .7rem;
+    }
+    .search-container {
+        width: 40%;
+        display: flex;
+    }
+    input {
+        font-size: 10px;
+    }
+    .search-btn {
+        padding: 10px;
+        height: 40px;
+    }
+}

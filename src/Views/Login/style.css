@@ -1,0 +1,52 @@
+.coucou {
+    position: absolute;
+    top: 6px;
+    padding: 0 10px;
+    font-size: 18px;
+    z-index: 0;
+    transition: transform 0.2s;
+    color: #999;
+}
+
+.coucou2 {
+    color: black;
+    font-size: 14px;
+    background-color: rgb(243, 255, 255);
+    transform: translate(5px, -18px);
+}
+
+.modal-div1 {
+    position: "relative";
+    align-self: "center";
+    justify-content: "center";
+    text-align: "center";
+    padding: 50px;
+    border: "1px solid black";
+    border-radius: 25px;
+}
+
+.container {
+    display: "flex";
+    flex: 1;
+    height: "100vh";
+    justify-content: "center";
+}
+
+.modal-div2 {
+    position: "relative";
+    align-self: "center";
+    justify-content: "center";
+    text-align: "center";
+    padding: 50;
+    border: "1px solid black";
+    border-radius: 25;
+}
+
+.modal-div3 {
+    padding: "0 30px";
+    position: "absolute";
+    top: -20;
+    left: "25%";
+    right: "25%";
+    background-color: "#fff";
+}

@@ -1,0 +1,226 @@
+.overview {
+    z-index: 0;
+    font-size: 1.2rem;
+    padding: 2% 6%;
+    box-shadow: inset 0px 0px 70px 17px black;
+    /* box-shadow:  0px 0px 46px 30px black; */
+    color: white;
+    width: 100%;
+    height: 40%;
+    padding-bottom: 5%;
+    position: absolute;
+    top: 70%;
+}
+
+.movie-title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -28%;
+}
+
+
+.btnn {
+    color: white;
+    font-size: 30px;
+}
+
+.details {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.release-date {
+    font-size: 1.2em;
+}
+
+
+.adult,
+.hd,
+.note {
+    width: 50px;
+    height: 35px;
+    padding: 2px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.hd,
+.note {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(82, 82, 82);
+    border: none;
+}
+
+
+
+.progress {
+    width: 80%;
+    height: 6px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+}
+
+.duration {
+    color: gray;
+}
+
+.progressbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like-dislike,
+.ad-to-list,
+.footer,
+.vote_count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-dislike {
+    width: 60%;
+}
+
+
+
+@media screen and (max-width: 870px) {
+    .movie-title {
+        font-size: 1.5rem;
+    }
+
+    .details {
+        width: 85%;
+    }
+
+    .release-date {
+        font-size: 1em;
+    }
+
+    .adult,
+    .hd,
+    .note {
+        width: 40px;
+        height: 30px;
+        padding: 2px;
+        font-size: .9em;
+    }
+
+    .progress {
+        width: 70%;
+    }
+
+    .like-dislike {
+        width: 80%;
+    }
+
+    .vote_count {
+        width: 140px;
+        color: white;
+        text-align: center;
+        font-size: .8em;
+
+        padding: 5px;
+        margin-left: 30px;
+    }
+
+    .like {
+        font-size: .4em;
+    }
+
+    .vote_count p {
+        font-size: 1em;
+    }
+
+    .overview-text {
+        font-size: .7em;
+    }
+
+    i {
+        font-size: .5em;
+    }
+
+    .footer {
+        width: 50%;
+    }
+
+    .ad-to-list {
+        width: 130px;
+        height: 45px;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 870px) {
+    .movie-title {
+        font-size: 2em;
+    }
+}
+
+
+
+
+ .footer {
+    margin-left: 5%;
+    width: 60%;
+}
+ 
+.vote_count {
+    width: 180px;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+
+    padding: 5px;
+    margin-right: 40px;
+}
+
+.like {
+    font-size: .5em;
+}
+
+.vote_count p {
+    font-size: 1.3em;
+    margin: 0%;
+    margin-right: 10px;
+}
+
+.like-dislike i {
+    font-size: 2.5em;
+}
+
+.ad-to-list {
+    width: 150px;
+    height: 55px;
+    font-size: .8em;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    padding-right: 2%;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.add-movie {
+    margin: 0%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ad-to-list:hover {
+    background-color: rgb(77, 68, 68);
+    color: white;
+}

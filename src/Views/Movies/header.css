@@ -1,0 +1,169 @@
+.header-movies {
+    width: 100%;
+    height: 800px;
+    box-shadow: inset 5px 5px 70px 27px black;
+}
+
+.image-header {
+    width: 100%;
+    height: 100%;
+}
+
+.image-header img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    width: 100%;
+    padding-top: 280px;
+    padding-left: 3%;
+}
+
+.header-title {
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.actions, .lec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.lec {
+    cursor: pointer;
+    width: 170px;
+    height: 55px;
+    padding-top: 1%;
+    justify-self: end;
+    background-color: rgba(56, 56, 56, 0.6);
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.lec:hover {
+    background-color: white;
+    color: black;
+}
+
+.lec p {
+    font-size: 1.3em;
+    margin: 0;
+    margin-right: 10%;
+}
+
+.icon {
+    margin: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header-overview {
+    color: white;
+    font-size: 1.1rem;
+    max-width: 40%;
+    padding: 1%;
+    background-color: rgba(46, 46, 46, 0.2);
+}
+
+@media screen and (max-width: 870px) {
+
+    .header-title {
+        font-size: 2em;
+        color: white;
+        font-weight: bold;
+        
+    }
+    .header-movies {
+        width: 100%;
+        height: 600px;
+        box-shadow: inset 5px 5px 70px 27px black;
+    }
+
+    .header-overview {
+        color: white;
+        font-size: 1.1rem;
+        max-width: 90%;
+        padding: 1%;
+        background-color: rgba(46, 46, 46, 0.2);
+    }
+    .actions {
+        width: 40%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .lec {
+        cursor: pointer;
+        width: 100px;
+        height: 35px;
+        padding-top: 1%;
+        justify-self: end;
+        background-color: rgba(56, 56, 56, 0.6);
+        color: white;
+        text-align: center;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    .lec p {
+        font-size: .8em;
+        margin: 0;
+        margin-right: 10%;
+    }
+    
+    .icon {
+        margin: 10px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+@media screen and (min-width: 870px) and (max-width: 1200px ) {
+
+    .header-title {
+        font-size: 2.7em;
+    }
+    .header-movies {
+        width: 100%;
+        height: 700px;
+    }
+
+    .header-overview {
+        font-size: 1.3rem;
+        max-width: 60%;
+        padding: 1%;
+        background-color: rgba(46, 46, 46, 0.2);
+    }
+    .actions {
+        width: 30%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .lec {
+        cursor: pointer;
+        width: 120px;
+        height: 45px;
+        }
+    .lec p {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 10%;
+    }
+    
+    .icon {
+        margin: 10px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
