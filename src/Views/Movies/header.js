@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from "react";
-import data from "Views/list-de-films";
-import { useSelector, useDispatch, useStore } from "react-redux";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
   addToMyList,
   removeFromMyList,
-  initActionMovieForHeader,
 } from "redux/actions/actions";
 import "./header.css";
-import { Link, NavigationType } from "react-router-dom";
 import Video from "./video";
 
 const Header = ({ navigation }) => {
   const movie = useSelector((state) => state.reducerMovies.header_movie);
-  const mylist = useSelector((state) => state.reducerMovies.mylist);
   const dispatch = useDispatch();
   const [inmylist, setInmylist] = useState(movie.inmylist);
   const [video, setvideo] = useState(false);

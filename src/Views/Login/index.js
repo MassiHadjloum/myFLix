@@ -18,9 +18,6 @@ const LoginContainer = () => {
   };
 
   const inputfocuse = useRef();
-  const focusSolved = () => {
-    inputfocuse.current.focuse();
-  };
 
   useEffect(() => {
     const firstError = Object.keys(errors).reduce((field, a) => {
@@ -61,45 +58,6 @@ const LoginContainer = () => {
     );
   };
 
-  const LabelizeInput = ({
-    inputStyle,
-    name,
-    defaultValue,
-    register,
-    dirtyFields,
-    errors,
-    required,
-    type,
-    placeholder,
-  }) => {
-    return (
-      <div className="form-group mt-2 mb-2">
-        <label
-          htmlFor={name}
-          style={{ textAlign: "end" }}
-          // className={!dirtyFields?.[name] ? "coucou2" : "coucou2"}
-          onClick={() => setFocus(name)}
-        >
-          {name}
-        </label>
-        <input
-          ref={inputfocuse}
-          type={type}
-          name={name}
-          className="form-control"
-          placeholder={placeholder}
-          defaultValue={defaultValue}
-          {...register(name, { required: required })}
-        />
-        {errors?.[name] && (
-          <span style={{ fontSize: 18, fontWeight: "bold", color: "#fab1a0" }}>
-            Le champ {name} est obligatoire
-          </span>
-        )}
-      </div>
-    );
-  };
-
   return (
     <div
       style={{
@@ -110,7 +68,7 @@ const LoginContainer = () => {
       }}
     >
       <img
-        style={{ position: "absolute", width: "100%" }}
+        style={{ position: "absolute", width: "100%" }} alt=""
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ktwg3SIcKec-etvsGt_6_QHaKe%26pid%3DApi&f=1"
       />
       {visibleModal && <Modal />}
@@ -212,48 +170,4 @@ const LoginContainer = () => {
   );
 };
 
-const inputStyle = {
-  inputContainer: {
-    position: "relative",
-    display: "flex",
-    flexDirection: "column",
-    marginBottom: 30,
-    backgroundColor: "transparent",
-    zIndex: 2,
-  },
-  padding: "0 10px",
-  height: 30,
-};
-
 export default LoginContainer;
-
-/**
- * 
- *   <LabelizeInput
-              inputStyle={inputStyle}
-              name="mot de passe"
-              defaultValue=""
-              register={register}
-              dirtyFields={dirtyFields}
-              isDirty={isDirty}
-              errors={errors}
-              required={true}
-              type={'password'}
-              placeholder={'password'}
-              />
-
-
-                 /*  <LabelizeInput
-              inputStyle={inputStyle}
-              name="email"
-              defaultValue=""
-              register={register}
-              dirtyFields={dirtyFields}
-              isDirty={isDirty}
-              errors={errors}
-              required={true}
-              type={'email'}
-              placeholder={'jhondoe@gmail.com'}
-            /> 
- 
- */

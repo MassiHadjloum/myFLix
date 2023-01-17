@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./style.css";
-import data from "../list-de-films.js";
 
 const Grid = (props) => {
   const movies = useSelector((state) => state.reducerMovies.movies);
@@ -28,6 +27,8 @@ const Grid = (props) => {
         className="image"
         src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
         alt={item.original_title}
+        width={300}
+        height={400}
         /* src={`https://image.tmdb.org/t/p/${item.poster_path}`} */
       />
       <i className="material-icons play">slideshow</i>

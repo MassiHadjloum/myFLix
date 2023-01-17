@@ -43,9 +43,9 @@ const MyListMovies = () => {
 
   return (
     <>
-      <div className="header">
+      {/* <div className="header">
         <NavBar show={false} />
-      </div>
+      </div> */}
 
       <div className="mycontainer" /* style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500//vvObT0eIWGlArLQx3K5wZ0uT812.jpg)` }} */>
         <div className="gridd">{displayIfEmpty()}</div>
